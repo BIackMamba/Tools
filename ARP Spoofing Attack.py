@@ -3,11 +3,6 @@ import sys
 import os
 import time
 
-
-def help_text():
-    print("\nUsage:\n python hd_tcp_syn.py network_range\n")
-    sys.exit()
-
 def enable_ip_forwarding():
     print ("\n[*] Enabling IP Forwarding...\n")
     os.system("echo 1 > /proc/sys/net/ipv4/ip_forward")
